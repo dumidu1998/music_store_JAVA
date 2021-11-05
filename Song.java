@@ -20,6 +20,9 @@ class Song {
 
     // default constructor
     public Song() {
+        this.name = "";
+        this.time = 0;
+        this.genre = "";
     }
 
     public String getName() {
@@ -46,10 +49,12 @@ class Song {
         this.genre = genre;
     }
 
+    // toString method
     public String toString() {
         return "Song [name=" + genre + ", name=" + name + ", time=" + time + "]";
     }
 
+    // equals method
     public boolean equals(Object inObject) {
 
         boolean isEqual = false;
